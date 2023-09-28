@@ -15,6 +15,7 @@
 
 <script>
 import CityWeather from "@/components/CityWeather.vue";
+import { TimeAgo  } from 'timeago.js';
 export default {
   name: 'Météo - listes des villes',
   components: { CityWeather },
