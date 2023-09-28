@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <router-link to="/">Accueil</router-link>
-    <router-link to="/CitiesList">Villes</router-link>
-  <router-link to="/CityWeather">Ville</router-link>
+  <div class="links">
+    <router-link to="/" class="Home-link">Accueil</router-link>
+    <router-link to="/CitiesList" class="Cities-link">Villes</router-link>
+    <router-link to="/CityWeather" class="City-link">Ville</router-link>
   </div>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Meteo logo" src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/47/Logo_M%C3%A9t%C3%A9o_France_2016.svg/768px-Logo_M%C3%A9t%C3%A9o_France_2016.svg.png" width="100" height="100">
+  <HelloWorld msg="Météo d'Aujourd'hui ?"/>
   <button @click="onListClick">click here!</button>
 
 <!--  <CitiesList msg="Météo - Liste des Villes"/>-->
@@ -38,5 +38,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
+  .links{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+  }
 }
 </style>
